@@ -1,0 +1,86 @@
+body {
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#auth-section,
+#task-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #333;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+#task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.task-input {
+  flex: 1;
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+.delete-task {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.delete-task:hover {
+  background-color: #d32f2f;
+}
+
+#connection-status {
+  padding: 10px;
+  font-size: 14px;
+  background-color: #fff8c6;
+  border: 1px solid #f0c36d;
+  color: #665c00;
+  text-align: center;
+}

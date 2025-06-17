@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple ToDo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tasks</h1>
+
+    <div id="auth-section">
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+      <input type="text" id="firstname" placeholder="First name">
+      <input type="text" id="lastname" placeholder="Last name">
+      <button id="register">Register</button>
+      <button id="login">Login</button>
+      <button id="logout" style="display: none;">Logout</button>
+    </div>
+
+    <div id="task-section">
+      <input type="text" id="task-input" placeholder="Enter task name...">
+      <button id="add-task">Add Task</button>
+    </div>
+
+    <div id="connection-status" style="display: none;"></div>
+
+    <ul id="task-list"></ul>
+
+    <template id="task-template">
+      <li class="task-item">
+        <input name="completed" type="checkbox" class="task-checkbox">
+        <input name="name" class="task-input" type="text">
+        <button class="delete-task">Delete</button>
+      </li>
+    </template>
+  </div>
+
+  <script src="scrypt.js"></script>
+</body>
+</html>
